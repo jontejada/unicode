@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<% include ../partials/head %>
+<body class='container'>
+	<% include ../partials/header %>
+	<main>
+		<div class='row'>
+			<% for (var i=0; i<6; i++) { %>
+			<div class='col-md-2'>
+				<table class='table table-hover table-condensed'>
+					<% for (var j=i*1000; j<i*1000+1000; j++) { %>
+					<tr>
+						<td><kbd><%= String.fromCharCode(j) %></kbd></td>
+						<td><%= j %></td>
+					</tr>
+					<% } %>
+				</table>
+			</div>
+			<% } %>
+		</div>
+	</main>
+</body>
+</html>
