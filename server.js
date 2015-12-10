@@ -6,7 +6,5 @@ app.use(express.static('public'));
 app.get('/', function(req, res) {
 	res.render('pages/index');
 });
-
-
 app.listen(port);
 console.log('on 8080');
